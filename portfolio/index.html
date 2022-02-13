@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+        var config = { 
+        containerID: "sawo-container",
+        identifierType: "email" or 'phone_number_sms',
+        apiKey: "", // add your api key here
+        onSuccess: (payload) => {
+        document.getElementById("status").innerHTML =
+          "Login Success";
+          },
+        };
+        let sawo = new Sawo(config);
+        sawo.showForm()
+    </script>
+    <nav class="site-nav grid">
+      <h1>Code_Bloodeds</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Find Us</a></li>
+      </ul>
+    </nav>
+    <section id="welcome" class="grid">
+      <div class="welcome-text">
+        <h2>Tech Enthusiasts<br />& Passionate about Programming</h2>
+        <p class="leading"> "Java is to JavaScript <br /> What a Car is to Carpet" </p>
+        <a href="#portfolio" class="button">View Our work</a>
+      </div>
+      <div class="welcome-img">
+        <img src="https://i.ibb.co/kxPxsrv/trou-noir.png" alt="pic of planet">
+      </div>
+    </section>
+    <section id="portfolio">
+      <h3>Some of our Projects</h3>
+      <div class="projects grid">
+        <a href="#">
+          <img src="https://i.ibb.co/tZBs4kv/capsule-spatiale.png" alt="space race image">
+          <h4>Tic Tac Toe Game</h4>
+        </a>
+        <a href="#">
+          <img src="https://i.ibb.co/sgWBR6M/saturne.png" alt="planet boy image">
+          <h4>Interest Calculator</h4>
+        </a>
+        <a href="#">
+          <img src="https://i.ibb.co/Q80kSPQ/astronaute.png" alt="captain cosmo image">
+          <h4>BMI Calculator</h4>
+        </a>
+      </div>
+    </section>
+    <section id="skills">
+      <h3>We are Capable of doing...</h3>
+      <ul class="grid">
+        <li>
+          <img src="https://i.ibb.co/hXvFQTy/meteor2647400.png" alt="comet">
+          <h4>C++</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/zJ69DMc/comet2534248.png" alt="comet">
+          <h4>HTML&CSS</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/0Y20t0c/comet2909923.png" alt="comet">
+          <h4>JavaScript</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/c1nBk03/meteor.png" alt="comet">
+          <h4>Python</h4>
+        </li>
+      </ul>
+      
+    </section>
+    <section id="contact">
+      <h3>Get In Touch With US</h3>
+      <p class="leading">Technology is Best when it brings people together!! <br /> So Join US!!</p>
+      <form>
+        <input type="text" placeholder='NAME'>
+        <input type="email" placeholder='EMAIL'>
+        <textarea placeholder='YOUR MESSAGE'></textarea>
+        <button class="button">Contact Us</button>
+      </form>
+    </section>
+    <footer>
+      <div class="grid">
+        <p class="copyright">Copyrights reserved to code_bloodeds</p>
+        <ul class="social">
+          <li><a href="#"><img src="git.png" alt="GitHub"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/iamshaunjp/responsive-css-grid-build/847f0a24fecf4aba7cd205a09b7a52b7924766cf/assets/icon_tw.svg" alt="twitter"></a></li>
+          <li><a href="#"><img src="lindin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+</html>
